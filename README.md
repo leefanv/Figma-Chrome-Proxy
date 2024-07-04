@@ -8,6 +8,8 @@
 1. 下载并解压 [Releases 版本](https://github.com/leefanv/Figma-Chrome-Proxy/releases) 插件
 2. 复制 `chrome://extensions/` 并粘贴到地址栏，按回车键进入扩展程序页
 3. 点击 **加载已解压的扩展程序**，选择插件目录目录地址安装插件
+
+![如何安装](https://img.seergb.com/Figma-Chrome-Proxy-01.jpg "如何安装")
    
 ## 如何使用
 ### 管理员
@@ -17,6 +19,8 @@
 ### 用户
 1. 启用插件，打开配置面板，粘贴获取到的 `IP`+`端口`，点击保存
 2. 根据需要在插件面板，启用/禁用插件功能
+   
+![如何设置](https://img.seergb.com/Figma-Chrome-Proxy-02.jpg "如何设置")
    
 ## 备注
 - 关于如何优化 Figma 网络加载，市面上已有很多解决方案，本插件旨在快速解决内网环境下，部分同事访问困难的问题， 并主动权在于发起者本身，不受其他因素影响
