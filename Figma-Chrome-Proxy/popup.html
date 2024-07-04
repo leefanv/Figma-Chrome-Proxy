@@ -120,7 +120,8 @@
   </head>
   <body>
     <h2>Figma Chrome Proxy</h2>
-    <p>开启局域网网络访问，实现内网内通过插件配置访问 Figma 网络请求。<a href="https://github.com/leefanv/Figma-Chrome-Proxy" target="_blank">Github 地址</a></p>
+    <p>使用局域网代理访问，实现在 Chrome 内转发 Figma 网络请求，使用前配置 IP，具体请查看文档 <a href="https://github.com/leefanv/Figma-Chrome-Proxy" target="_blank">Github 地址</a></p>
+    <p>© copyright <a href="https://seergb.com/" target="_blank">seergb.com</a> </p>
     <button id="toggleProxy">Disabled Now</button>
     <button class="accordion">Custom config</button>
     <div class="panel">
@@ -128,9 +129,7 @@
         <input type="text" id="proxyServer" placeholder="Proxy Server IP:Port">
       </label>
       <button id="saveProxy">Save Proxy</button>
-      <div id="saveStatus"></div>
-    </div>
-    
-    <script src="popup.js"></script>
+    <div id="saveStatus"></div>
   </body>
+  <script src="popup.js"></script>
 </html>

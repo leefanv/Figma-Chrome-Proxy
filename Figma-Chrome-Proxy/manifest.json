@@ -1,8 +1,8 @@
 {
     "name": "Figma Chrome Proxy",
     "manifest_version": 3,
-    "description": "解决无法访问 Figma，或者资源加载不出来的情况",
-    "version": "1.0.6",
+    "description": "使用局域网代理访问，实现在 Chrome 内转发 Figma 网络请求",
+    "version": "1.0.7",
     "permissions": [
       "proxy",
       "activeTab",
