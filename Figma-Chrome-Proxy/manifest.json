@@ -1,0 +1,25 @@
+{
+    "name": "Figma Chrome Proxy",
+    "manifest_version": 3,
+    "description": "使用局域网代理访问，实现在 Chrome 内转发 Figma 网络请求",
+    "version": "1.0.7",
+    "permissions": [
+      "proxy",
+      "activeTab",
+      "storage"
+    ],
+    "host_permissions": [
+      "*://*.figma.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }

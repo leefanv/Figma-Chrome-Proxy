@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Figma Chrome Proxy</title>
+    <style>
+      body {
+        width: 300px;
+        padding: 16px;
+        border-radius: 32px;
+        font-family: Arial, sans-serif
+      }
+      h2 {
+        margin-top: 0;
+        font-size: 14px;
+      }
+      p {
+        color: #737373;
+        font-size: 12px;
+        margin-bottom: 16px;
+      }
+      a {
+        color: #1A96EE;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .accordion {
+        background-color: white;
+        color: #0A0A0A;
+        cursor: pointer;
+        padding: 12px;
+        width: 100%;
+        text-align: left;
+        outline: none;
+        font-size: 14px;
+        font-weight: 600;
+        transition: 0.4s;
+        border: 1px solid #F0F0F0;
+        border-radius: 6px;
+      }
+      .accordion:after {
+        content: '\002B';
+        color: #A3A3A3;
+        float: right;
+        font-weight: 100;
+        margin-left: 6px;
+        margin-top: 2px;
+      }
+      .active:after {
+        content: "\2212";
+        color: #A3A3A3;
+      }
+      .panel {
+        margin-top: 8px;
+        padding: 16px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+        border-radius: 6px;
+        border: 1px solid #F0F0F0;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+      input[type="text"] {
+        width: 255px;
+        padding: 4px 4px 8px 8px;
+        margin-bottom: 8px;
+        border-radius: 6px;
+        height: 32px;
+        background-color: #F7F7F7;
+        border: none;
+      }
+      button {
+        width: 100%;
+        padding: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      #toggleProxy {
+        margin-bottom: 16px;
+      }
+      .disabled {
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        background: #F7F7F7;
+        color: #737373;
+        border-radius: 6px;
+      }
+      .enabled {
+        border: 1px solid #1CA52B;
+        background: #33C648;
+        color: #FFF;
+        border-radius: 6px;
+      }
+      #saveProxy {
+        background-color: #1A96EE;
+        border-radius: 6px;
+        color: white;
+        transition: background-color 0.3s ease;
+      }
+      #saveProxy:hover {
+        background-color: #0056b3;
+      }
+      #saveProxy:active {
+        background-color: #003d80;
+      }
+      #saveStatus {
+        margin-top: 16px;
+        padding: 4px;
+        text-align: center;
+        display: none;
+        border-radius: 4px;
+        border: 1px solid #059669;
+        background: #FFF;
+        color: #059669;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Figma Chrome Proxy</h2>
+    <p>使用局域网代理访问，实现在 Chrome 内转发 Figma 网络请求，使用前配置 IP，具体请查看文档 <a href="https://github.com/leefanv/Figma-Chrome-Proxy" target="_blank">Github 地址</a></p>
+    <p>© copyright <a href="https://seergb.com/" target="_blank">seergb.com</a> </p>
+    <button id="toggleProxy">Disabled Now</button>
+    <button class="accordion">Custom config</button>
+    <div class="panel">
+      <label>
+        <input type="text" id="proxyServer" placeholder="Proxy Server IP:Port">
+      </label>
+      <button id="saveProxy">Save Proxy</button>
+    <div id="saveStatus"></div>
+  </body>
+  <script src="popup.js"></script>
+</html>
